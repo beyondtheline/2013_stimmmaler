@@ -1,0 +1,105 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.dtd" >
+   <PATCH nodename="C:\Users\julian\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Entwicklung\Patches\Subpatches\tracker.v4p" systemname="tracker" filename="C:\Users\julian\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Entwicklung\Patches\Subpatches\tracker.v4p">
+   <BOUNDS type="Window" left="1200" top="1800" width="9720" height="8895">
+   </BOUNDS>
+   <NODE systemname="VideoIn (DShow9)" nodename="VideoIn (DShow9)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="4020" top="2835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Driver" slicecount="1" values="|PS3Eye Camera|">
+   </PIN>
+   <PIN pinname="Video Format" slicecount="1" values="RGB24">
+   </PIN>
+   <PIN pinname="Video" visible="1">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="240">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="320">
+   </PIN>
+   <PIN pinname="Framerate" slicecount="1" values="60">
+   </PIN>
+   <PIN pinname="Property Page" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="14" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="4125" top="3915" width="2250" height="405">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4125" top="3915" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.98431,0.60392,0.52157,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Tracker (EX9.Texture Analysis)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Analysis\Tracker\Tracker (EX9.Texture Analysis).v4p" nodename="Tracker (EX9.Texture Analysis)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="3870" top="4635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Track Color" visible="1">
+   </PIN>
+   <PIN pinname="Out X" visible="1">
+   </PIN>
+   <PIN pinname="Out Y" visible="1">
+   </PIN>
+   <PIN pinname="Show Gizmo" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Tolerance" slicecount="1" values="0.14">
+   </PIN>
+   <PIN pinname="Softness" slicecount="1" values="0.11">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Color Output" dstnodeid="13" dstpinname="Track Color">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4020" top="1740" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4020" top="1740" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="VideoTexture (EX9.Texture VMR9)" nodename="VideoTexture (EX9.Texture VMR9)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="3810" top="3405" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Video" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Video" dstnodeid="11" dstpinname="Video">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="3840" top="5115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Out X" dstnodeid="10" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Enabled">
+   </LINK>
+   </PATCH>

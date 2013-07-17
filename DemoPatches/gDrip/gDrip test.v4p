@@ -1,0 +1,151 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.dtd" >
+   <PATCH nodename="C:\Users\Gil\Documents\vvvv\gDrip\gDrip test.v4p" filename="C:\Users\Gil\Documents\vvvv\shaders\MetaballsSpreaded\MetaballsSpreaded\gDrip test.v4p" systemname="gDrip test">
+   <BOUNDS height="6000" left="4650" top="8715" type="Window" width="9000">
+   </BOUNDS>
+   <NODE componentmode="Hidden" debug="0" filename="gDrip-0001.v4p" id="2" nodename="gDrip-0001.v4p" systemname="gDrip-0001" path="C:\Users\Gil\Documents\vvvv\gDrip\">
+   <BOUNDS height="270" left="1065" top="1785" type="Node" width="6105">
+   </BOUNDS>
+   <PIN pinname="Mask Texture" visible="1">
+   </PIN>
+   <BOUNDS height="14070" left="0" top="0" type="Window" width="18600">
+   </BOUNDS>
+   <PIN pinname="Background Texture" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Go" visible="1">
+   </PIN>
+   <PIN pinname="Clear" visible="1">
+   </PIN>
+   <PIN pinname="Blob Size Multiplier" slicecount="1" values="0.81">
+   </PIN>
+   <PIN pinname="Min Blob Size" slicecount="1" values="0.02">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="3" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="1155" top="1065" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Use Preloaded Item" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Original Width" visible="1">
+   </PIN>
+   <PIN pinname="Original Height" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Mask Texture" srcnodeid="3" srcpinname="Texture Out">
+   </LINK>
+   <LINK dstnodeid="2" dstpinname="Background Texture" srcnodeid="3" srcpinname="Texture Out">
+   </LINK>
+   <NODE componentmode="Hidden" id="4" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <BOUNDS height="100" left="1425" top="2820" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="4" dstpinname="Texture" srcnodeid="2" srcpinname="Texture Out">
+   </LINK>
+   <NODE componentmode="InAWindow" id="5" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="1230" top="3390" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="1230" top="3390" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="12510" left="20505" top="765" type="Window" width="7155">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="6" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
+   <BOUNDS height="100" left="1530" top="2340" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="4" dstpinname="Transform" srcnodeid="6" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Layers" srcnodeid="4" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (Value Advanced)" systemname="IOBox (String)">
+   <BOUNDS height="100" left="1185" top="600" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="330" left="1185" top="600" type="Box" width="1695">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="IMG_1085-flt.png">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="Filename" srcnodeid="7" srcpinname="Output String">
+   </LINK>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="4875" top="450" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="975" left="4875" top="450" type="Box" width="975">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Start">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Go" srcnodeid="8" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="9" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="6030" top="450" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="945" left="6030" top="450" type="Box" width="915">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Clear">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Clear" srcnodeid="9" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="2" dstpinname="Width" srcnodeid="3" srcpinname="Original Width">
+   </LINK>
+   <LINK dstnodeid="2" dstpinname="Height" srcnodeid="3" srcpinname="Original Height">
+   </LINK>
+   </PATCH>
