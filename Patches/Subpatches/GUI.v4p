@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
    <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\GUI.v4p" systemname="GUI" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\Patches\Subpatches\GUI.v4p">
-   <BOUNDS type="Window" left="4380" top="0" width="23970" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="7596" top="9516" width="4452" height="276">

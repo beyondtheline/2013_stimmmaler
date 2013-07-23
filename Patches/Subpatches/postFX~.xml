@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
    <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\postFX.v4p" systemname="postFX" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\Patches\Subpatches\postFX.v4p">
-   <BOUNDS type="Window" left="1515" top="390" width="23535" height="15630">
+   <BOUNDS type="Window" left="14400" top="0" width="14400" height="15630">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="2316" top="336" width="792" height="240">
@@ -27,6 +27,8 @@
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.93327,0.93327,0.93327,1.00000|">
+   </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="2232" top="3132" width="100" height="100">
@@ -41,15 +43,15 @@
    <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="5" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="2124" top="4692" width="792" height="240">
+   <BOUNDS type="Box" left="2160" top="6612" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2124" top="4692" width="0" height="0">
+   <BOUNDS type="Node" left="2160" top="6612" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="5" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Glow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Glow\Glow (EX9.Texture Filter).v4p" nodename="Glow (EX9.Texture Filter)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="2376" top="2604" width="100" height="100">
    </BOUNDS>
@@ -91,5 +93,67 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2172" top="5712" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Pillow (DX9)" nodename="Pillow (DX9)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="5136" top="3612" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Fade Amount" slicecount="1" values="0.96">
+   </PIN>
+   <PIN pinname="Round Edges" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture Coord Mapping" slicecount="1" values="OnShape_UV">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="9" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="9" dstpinname="Layer 2">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="14" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="5952" top="1920" width="2256" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5952" top="1920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Color Output" dstnodeid="13" dstpinname="Fade Color">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="15" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="5736" top="1008" width="2256" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5736" top="1008" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.98888,0.98888,0.98888,0.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Color Output" dstnodeid="13" dstpinname="Color">
+   </LINK>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="5196" top="2796" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Transform Out" dstnodeid="13" dstpinname="Transform">
    </LINK>
    </PATCH>
