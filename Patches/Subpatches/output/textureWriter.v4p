@@ -15,11 +15,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="264" top="1872" width="4872" height="216">
+   <BOUNDS type="Box" left="288" top="1464" width="10350" height="495">
    </BOUNDS>
-   <BOUNDS type="Node" left="264" top="1872" width="0" height="0">
+   <BOUNDS type="Node" left="288" top="1464" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="..\..\DOKU\Drawings\">
+   <PIN pinname="Input String" slicecount="1" values="..\..\..\..\..\DOKU\Drawings\">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.foo">
    </PIN>
@@ -53,15 +53,15 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="7" dstpinname="FileName">
    </LINK>
    <NODE systemname="Date (Astronomy)" filename="%VVVV%\addonpack\lib\nodes\plugins\Date.dll" nodename="Date (Astronomy)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="432" top="2208" width="100" height="100">
+   <BOUNDS type="Node" left="396" top="2148" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Formate" slicecount="2" values="yyyy-MM-dd,T">
    </PIN>
-   <BOUNDS type="Box" left="432" top="2208">
+   <BOUNDS type="Box" left="396" top="2148">
    </BOUNDS>
    <PIN pinname="CultureInfo" slicecount="1" values="fr-FR">
    </PIN>
-   <PIN pinname="Update" slicecount="1" values="1">
+   <PIN pinname="Update" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Current Date" visible="1">
    </PIN>
@@ -79,7 +79,7 @@
    <LINK srcnodeid="4" srcpinname="Current Date" dstnodeid="3" dstpinname="Input">
    </LINK>
    <NODE systemname="RegExpr (String Replace)" filename="%VVVV%\addonpack\lib\nodes\plugins\RegExprNodes.dll" nodename="RegExpr (String Replace)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="696" top="2928" width="100" height="100">
+   <BOUNDS type="Node" left="708" top="2916" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Regular Expression" slicecount="1" values=":">
    </PIN>
@@ -127,6 +127,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Save">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Save" linkstyle="VHV">
    <LINKPOINT x="5856" y="4152">
@@ -147,5 +149,7 @@
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="7" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Output" dstnodeid="5" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Update">
    </LINK>
    </PATCH>
