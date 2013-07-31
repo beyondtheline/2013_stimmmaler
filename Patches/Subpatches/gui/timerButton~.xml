@@ -203,9 +203,9 @@
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="17" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5004" top="7824" width="792" height="240">
+   <BOUNDS type="Box" left="2580" top="7152" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5004" top="7824" width="0" height="0">
+   <BOUNDS type="Node" left="2580" top="7152" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

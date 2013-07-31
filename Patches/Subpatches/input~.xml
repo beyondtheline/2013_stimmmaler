@@ -337,9 +337,9 @@
    <LINK srcnodeid="3" srcpinname="Position" dstnodeid="35" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5892" top="3504" width="480" height="480">
+   <BOUNDS type="Box" left="5472" top="3432" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5892" top="3504" width="0" height="0">
+   <BOUNDS type="Node" left="5472" top="3432" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

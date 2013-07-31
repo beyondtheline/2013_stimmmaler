@@ -34,22 +34,6 @@
    <PIN pinname="Size" slicecount="1" values="13">
    </PIN>
    </NODE>
-   <NODE systemname="audioIn" filename="Subpatches\audioIn.v4p" nodename="Subpatches\audioIn.v4p" componentmode="InAWindow" id="17">
-   <BOUNDS type="Node" left="6234" top="7650" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
-   </BOUNDS>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   <PIN pinname="Draw" visible="1">
-   </PIN>
-   <PIN pinname="color" visible="1">
-   </PIN>
-   <PIN pinname="gain" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="23" border="0">
    <BOUNDS type="Node" left="1827" top="27195" width="100" height="100">
    </BOUNDS>
@@ -104,7 +88,7 @@
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="draw" filename="Subpatches\draw.v4p" componentmode="InAWindow" id="44" nodename="Subpatches\draw.v4p">
+   <NODE systemname="draw" filename="Subpatches\draw.v4p" componentmode="Hidden" id="44" nodename="Subpatches\draw.v4p">
    <BOUNDS type="Node" left="1392" top="15876" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1392" top="15876" width="4800" height="3600">
@@ -139,9 +123,9 @@
    </PIN>
    <PIN pinname="Width - Width" visible="1">
    </PIN>
-   <PIN pinname="color" visible="1">
+   <PIN pinname="color" visible="1" slicecount="1" values="-1.04242777143562">
    </PIN>
-   <PIN pinname="gain" visible="1">
+   <PIN pinname="gain" visible="1" slicecount="1" values="0.02">
    </PIN>
    <PIN pinname="Position XY" visible="1">
    </PIN>
@@ -201,7 +185,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3288" top="23484" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="15000" top="555" width="28800" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -209,9 +193,9 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
-   <PIN pinname="XY" visible="1">
+   <PIN pinname="XY" visible="1" slicecount="2" values="0.307927663734115,-0.345332464146023">
    </PIN>
-   <PIN pinname="Color" visible="1">
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,0.50389|">
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="90">
@@ -301,7 +285,7 @@
    </PIN>
    <PIN pinname="Texture" visible="1">
    </PIN>
-   <PIN pinname="Lightness" visible="1">
+   <PIN pinname="Lightness" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="96" srcpinname="Texture Out" dstnodeid="98" dstpinname="Input">
@@ -335,8 +319,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="99" srcpinname="Output" dstnodeid="100" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Draw" dstnodeid="99" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Output" dstnodeid="44" dstpinname="Insert">
    </LINK>
@@ -379,10 +361,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="23" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="color" dstnodeid="44" dstpinname="color">
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="gain" dstnodeid="44" dstpinname="gain">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="163">
    <BOUNDS type="Node" left="252" top="5736" width="100" height="100">
@@ -432,7 +410,7 @@
    <PIN pinname="Size" slicecount="1" values="11">
    </PIN>
    </NODE>
-   <NODE systemname="input" filename="Subpatches\input.v4p" componentmode="InAWindow" id="172" nodename="Subpatches\input.v4p">
+   <NODE systemname="input" filename="Subpatches\input.v4p" componentmode="Hidden" id="172" nodename="Subpatches\input.v4p">
    <BOUNDS type="Node" left="1404" top="7512" width="3600" height="264">
    </BOUNDS>
    <BOUNDS type="Box" left="1404" top="7512" width="4800" height="3600">
@@ -508,8 +486,6 @@
    </LINK>
    <LINK srcnodeid="177" srcpinname="Texture Out" dstnodeid="155" dstpinname="Texture">
    </LINK>
-   <LINK srcnodeid="17" srcpinname="gain" dstnodeid="98" dstpinname="Lightness">
-   </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="178">
    <BOUNDS type="Node" left="372" top="8148" width="100" height="100">
    </BOUNDS>
@@ -566,8 +542,32 @@
    </NODE>
    <LINK srcnodeid="172" srcpinname="Button B" dstnodeid="99" dstpinname="Input 3">
    </LINK>
-   <LINK srcnodeid="44" srcpinname="XY" dstnodeid="88" dstpinname="XY">
-   </LINK>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="88" dstpinname="Color">
+   </LINK>
+   <NODE systemname="audioIn" filename="Subpatches\input\audioIn.v4p" nodename="Subpatches\input\audioIn.v4p" componentmode="InAWindow" id="17">
+   <BOUNDS type="Node" left="6234" top="7650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
+   </BOUNDS>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="Draw" visible="1">
+   </PIN>
+   <PIN pinname="color" visible="1">
+   </PIN>
+   <PIN pinname="gain" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Draw" dstnodeid="99" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="color" dstnodeid="44" dstpinname="color">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="gain" dstnodeid="44" dstpinname="gain">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="gain" dstnodeid="98" dstpinname="Lightness">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="XY" dstnodeid="88" dstpinname="XY">
    </LINK>
    </PATCH>

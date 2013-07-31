@@ -291,7 +291,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4464" top="492" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="27030" height="15630">
    </BOUNDS>
    <PIN pinname="BlobPosition" visible="1">
    </PIN>

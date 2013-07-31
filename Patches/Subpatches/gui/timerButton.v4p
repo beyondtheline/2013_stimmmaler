@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
    <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\gui\timerButton.v4p" systemname="timerButton" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\gui\timerButton.v4p">
-   <BOUNDS type="Window" left="17115" top="2580" width="11685" height="12810">
+   <BOUNDS type="Window" left="17115" top="2580" width="11685" height="10230">
    </BOUNDS>
    <NODE systemname="Button (3d Quad)" filename="%VVVV%\lib\nodes\modules\3D\Button (3d Quad).v4p" nodename="Button (3d Quad)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1308" top="2004" width="2292" height="264">
