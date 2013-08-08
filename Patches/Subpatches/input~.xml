@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\input.v4p" systemname="input" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\input.v4p">
+   <PATCH nodename="C:\Users\Gast\Documents\#Projekte\WiMa2013\2013_stimmmaler\Patches\Subpatches\input.v4p" systemname="input" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\input.v4p">
    <BOUNDS type="Window" left="14400" top="0" width="14400" height="15630">
    </BOUNDS>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="0">
@@ -291,7 +291,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4464" top="492" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="16980" height="15630">
    </BOUNDS>
    <PIN pinname="BlobPosition" visible="1">
    </PIN>
