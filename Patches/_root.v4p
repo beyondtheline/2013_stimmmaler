@@ -34,12 +34,12 @@
    <PIN pinname="Size" slicecount="1" values="13">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="23" border="0">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="23" border="1">
    <BOUNDS type="Node" left="1827" top="27195" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1827" top="27195" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="3525" top="-10035" width="17910" height="10260">
+   <BOUNDS type="Window" left="5640" top="-14655" width="17910" height="10260">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -383,7 +383,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1404" top="5772" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -458,8 +458,6 @@
    <LINKPOINT x="3308" y="15650">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="88" srcpinname="Layer" dstnodeid="26" dstpinname="Layer 3">
-   </LINK>
    <LINK srcnodeid="98" srcpinname="Layer" dstnodeid="26" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="176">
@@ -509,7 +507,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1560" top="8796" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -569,5 +567,7 @@
    <LINK srcnodeid="17" srcpinname="gain" dstnodeid="98" dstpinname="Lightness">
    </LINK>
    <LINK srcnodeid="44" srcpinname="XY" dstnodeid="88" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Layer" dstnodeid="26" dstpinname="Layer 3">
    </LINK>
    </PATCH>

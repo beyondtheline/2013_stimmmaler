@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
    <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\_root.v4p" systemname="_root" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\_root.v4p">
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="27030" height="15630">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
    <BOUNDS type="Node" left="12" top="2796" width="6225" height="270">
@@ -34,12 +34,12 @@
    <PIN pinname="Size" slicecount="1" values="13">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="23" border="0">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="23" border="1">
    <BOUNDS type="Node" left="1827" top="27195" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1827" top="27195" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="3525" top="-10035" width="17910" height="10260">
+   <BOUNDS type="Window" left="5640" top="-14655" width="17910" height="10260">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -180,12 +180,12 @@
    <PIN pinname="Y" visible="1" slicecount="1" values="-0.962202136400986">
    </PIN>
    </NODE>
-   <NODE systemname="GUI" filename="Subpatches\GUI.v4p" componentmode="InAWindow" id="88" nodename="Subpatches\GUI.v4p">
+   <NODE systemname="GUI" filename="Subpatches\GUI.v4p" componentmode="Hidden" id="88" nodename="Subpatches\GUI.v4p">
    <BOUNDS type="Node" left="3288" top="23484" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3288" top="23484" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="27030" height="15630">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -549,7 +549,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="27030" height="15630">
    </BOUNDS>
    <PIN pinname="Position Out" visible="1">
    </PIN>

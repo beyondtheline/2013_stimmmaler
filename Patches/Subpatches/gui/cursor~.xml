@@ -193,6 +193,8 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
+   <PIN pinname="FilterTime" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Go To Position">
    </LINK>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
    <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\input\wiiMoteInput.v4p" systemname="wiiMoteInput" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\input\wiiMoteInput.v4p">
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
+   <BOUNDS type="Window" left="0" top="0" width="27030" height="15630">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="27" nodename=":PLUGINS:\WiiMotePlugin.dll" systemname="WiiMote (Devices)" filename="%VVVV%\addonpack\lib\nodes\plugins\WiiMotePlugin.dll">
    <BOUNDS height="264" left="2988" top="3756" type="Node" width="8772">
@@ -113,7 +113,7 @@
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Working">
    </PIN>
    </NODE>
    <LINK dstnodeid="20" dstpinname="Input String" linkstyle="VHV" srcnodeid="27" srcpinname="Working">
