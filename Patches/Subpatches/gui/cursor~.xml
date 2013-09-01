@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
    <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\gui\cursor.v4p" systemname="cursor" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\gui\cursor.v4p">
-   <BOUNDS type="Window" left="15750" top="2145" width="11550" height="12900">
+   <BOUNDS type="Window" left="17250" top="2085" width="11550" height="12900">
    </BOUNDS>
    <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="1068" top="6408" width="100" height="100">
@@ -29,7 +29,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2589" top="4377" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.03">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.02">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -57,7 +57,7 @@
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="1668" top="5100" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="XY" visible="1">
+   <PIN pinname="XY" visible="1" slicecount="28" values="0,0">
    </PIN>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -193,12 +193,10 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="0">
+   <PIN pinname="FilterTime" slicecount="1" values="0.21">
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Position Out" dstnodeid="8" dstpinname="XY">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="12" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="1068" top="7104" width="792" height="240">
@@ -207,7 +205,11 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Position Out" dstnodeid="8" dstpinname="XY">
    </LINK>
    </PATCH>

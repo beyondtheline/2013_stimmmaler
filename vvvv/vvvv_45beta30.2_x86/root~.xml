@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\vvvv\vvvv_45beta30.2_x86\root.v4p" componentmode="Hidden" filename="A:\vvvv\vvvv45\root.v4p" systemname="root">
+   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\vvvv\vvvv_45beta30.2_x86\root.v4p" componentmode="Hidden" filename="A:\vvvv\vvvv45\root.v4p" systemname="root">
    <BOUNDS height="9315" left="2400" top="180" type="Window" width="10005">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="%VVVV%\plugins\NodeCollector.dll" id="-13" nodename="NodeList (VVVV)||plugins\NodeCollector.dll" systemname="NodeList (VVVV)">
@@ -167,7 +167,7 @@
    </PIN>
    <PIN pinname="Content Type">
    </PIN>
-   <PIN encoded="0" pinname="Input String" slicecount="2" values=",">
+   <PIN encoded="0" pinname="Input String" slicecount="2" values="..\..\Patches\Modules,">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
@@ -320,16 +320,16 @@
    <PIN pinname="String Type" slicecount="1" values="URL">
    </PIN>
    </NODE>
-   <NODE systemname="test" filename="C:\Users\julian.hermann\Desktop\test.v4p" nodename="C:\Users\julian.hermann\Desktop\test.v4p" componentmode="InAWindow" id="74">
-   <BOUNDS type="Node" left="60" top="360" width="100" height="100">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="Inspektor (VVVV)" componentmode="InAWindow" id="75" systemname="Inspektor (VVVV)">
    <BOUNDS type="Node" left="60" top="660" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="60" top="660" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="2595" top="5385" width="5310" height="8730">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="_root" filename="..\..\Patches\_root.v4p" nodename="..\..\Patches\_root.v4p" componentmode="InAWindow" id="76">
+   <BOUNDS type="Node" left="60" top="60" width="100" height="100">
    </BOUNDS>
    </NODE>
    </PATCH>
