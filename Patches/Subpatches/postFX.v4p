@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\postFX.v4p" systemname="postFX" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\Patches\Subpatches\postFX.v4p">
+   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\VVVV Entwicklung\2013_stimmmaler\Patches\Subpatches\postFX.v4p" systemname="postFX" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\Patches\Subpatches\postFX.v4p">
    <BOUNDS type="Window" left="0" top="0" width="20505" height="15630">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.93327,0.93327,0.93327,1.00000|" visible="1">
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.93327,0.93327,0.93327,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="3">
@@ -257,7 +257,7 @@
    </PIN>
    <PIN pinname="Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
-   <PIN pinname="Alpha" visible="1" slicecount="1" values="0.3">
+   <PIN pinname="Alpha" visible="1" slicecount="1" values="0.2">
    </PIN>
    </NODE>
    <NODE id="17" systemname="Blend (EX9.RenderState)" filename="" nodename="Blend (EX9.RenderState)" componentmode="Hidden">
