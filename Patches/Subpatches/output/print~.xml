@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\output\print.v4p" systemname="print" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\output\print.v4p">
-   <BOUNDS type="Window" left="2415" top="-15810" width="16920" height="12600">
+   <PATCH nodename="C:\Users\julian\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\output\print.v4p" systemname="print" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\output\print.v4p">
+   <BOUNDS type="Window" left="11610" top="3015" width="18540" height="17715">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1764" top="9888" width="5628" height="612">
@@ -81,7 +81,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5016" top="816" width="396" height="480">
+   <BOUNDS type="Box" left="5016" top="816" width="510" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="5016" top="816" width="0" height="0">
    </BOUNDS>
@@ -117,7 +117,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2508" top="4884" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="2013-07-18_13-45-15.png">
+   <PIN pinname="Input String" slicecount="1" values="2013-07-23_15-35-12.png">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -163,9 +163,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="996" top="2724" width="7860" height="420">
+   <BOUNDS type="Box" left="966" top="2109" width="7860" height="420">
    </BOUNDS>
-   <BOUNDS type="Node" left="996" top="2724" width="0" height="0">
+   <BOUNDS type="Node" left="966" top="2109" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="|C:\Program Files (x86)\IrfanView\i_view32.exe|">
    </PIN>
@@ -179,11 +179,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="10" dstpinname="File">
-   <LINKPOINT x="12" y="6144">
+   <LINKPOINT x="0" y="5836">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="3" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="3" dstpinname="Input 2">
    </LINK>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="2430" top="3405" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>

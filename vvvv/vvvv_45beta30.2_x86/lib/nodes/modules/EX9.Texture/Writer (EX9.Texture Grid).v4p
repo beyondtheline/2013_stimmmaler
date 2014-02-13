@@ -1,11 +1,11 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.4.dtd" >
-   <PATCH nodename="C:\Dev\vvvv\vvvv45\lib\nodes\modules\EX9.Texture\Writer (EX9.Texture Grid).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
+   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\VVVV Entwicklung\2013_stimmmaler\vvvv\vvvv_45beta30.2_x86\lib\nodes\modules\EX9.Texture\Writer (EX9.Texture Grid).v4p">
    <BOUNDS height="11475" left="2805" top="2130" type="Window" width="14385">
    </BOUNDS>
-   <NODE componentmode="InAWindow" id="38" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="InAWindow" id="38" nodename="RENDERER (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="0" left="525" top="4725" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="5115" left="10305" top="60" type="Window" width="5025">
+   <BOUNDS height="8250" left="16590" top="1110" type="Window" width="11880">
    </BOUNDS>
    <BOUNDS height="2310" left="525" top="4725" type="Box" width="2895">
    </BOUNDS>
@@ -44,6 +44,8 @@
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
    </PIN>
    </NODE>
    <NODE id="37" nodename="GridSplit (2d)" systemname="GridSplit (2d)">

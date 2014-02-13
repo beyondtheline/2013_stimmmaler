@@ -1,43 +1,9 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\VVVV Entwicklung\2013_stimmmaler\Patches\Subpatches\input\mouseInput.v4p" systemname="mouseInput" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\input\mouseInput.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\julian.hermann\Desktop\Stimmmaler\VVVV Entwicklung\2013_stimmmaler\Patches\Subpatches\input\mouseInput.v4p" systemname="mouseInput" filename="E:\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Installation\Entwicklung\2013_stimmmaler\Patches\Subpatches\input\mouseInput.v4p">
    <BOUNDS type="Window" left="0" top="0" width="14400" height="15630">
    </BOUNDS>
-   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="2643" top="2928" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1440" top="876" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1440" top="876" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Switch">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Switch">
-   </LINK>
    <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (System Window)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="2127" top="921" width="100" height="100">
+   <BOUNDS type="Node" left="543" top="513" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Middle Button" visible="1">
    </PIN>
@@ -50,12 +16,10 @@
    <PIN pinname="Left Button" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Y" dstnodeid="7" dstpinname="Input 2">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5082" top="1800" width="480" height="480">
+   <BOUNDS type="Box" left="618" top="3492" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5082" top="1800" width="0" height="0">
+   <BOUNDS type="Node" left="618" top="3492" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -70,10 +34,14 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Insert">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Left Button" dstnodeid="4" dstpinname="Y Input Value">
+   <LINK srcnodeid="5" srcpinname="Left Button" dstnodeid="4" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="1068" y="2136">
+   </LINKPOINT>
+   <LINKPOINT x="648" y="2136">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="2238" top="3456" width="100" height="100">
+   <BOUNDS type="Node" left="1386" top="3504" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Y" visible="1">
    </PIN>
@@ -82,12 +50,14 @@
    <PIN pinname="XY" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="3" dstpinname="Y">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="X" dstnodeid="3" dstpinname="X">
+   <LINK srcnodeid="5" srcpinname="X" dstnodeid="3" dstpinname="X" linkstyle="Bezier">
+   <LINKPOINT x="696" y="2142">
+   </LINKPOINT>
+   <LINKPOINT x="1404" y="2142">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="2238" top="3876" width="100" height="100">
+   <BOUNDS type="Node" left="1386" top="3924" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Go To Position" visible="1">
    </PIN>
@@ -96,26 +66,10 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="XY" dstnodeid="2" dstpinname="Go To Position">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3846" top="1896" width="792" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3846" top="1896" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.77234353724854E-183">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input use Audio|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2238" top="4212" width="792" height="240">
+   <BOUNDS type="Box" left="1386" top="4260" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2238" top="4212" width="0" height="0">
+   <BOUNDS type="Node" left="1386" top="4260" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -125,5 +79,11 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Position Out" dstnodeid="0" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y" dstnodeid="3" dstpinname="Y" linkstyle="Bezier">
+   <LINKPOINT x="828" y="2142">
+   </LINKPOINT>
+   <LINKPOINT x="1848" y="2142">
+   </LINKPOINT>
    </LINK>
    </PATCH>
