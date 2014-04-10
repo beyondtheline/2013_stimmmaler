@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="C:\Users\julian.hermann\Desktop\Stimmmaler\VVVV Entwicklung\2013_stimmmaler\Patches\Subpatches\gui\GUI_Buttons.v4p" systemname="GUI_Buttons" filename="C:\Users\julian.hermann\Desktop\Stimmmaler\VVVV Entwicklung\2013_stimmmaler\Patches\Subpatches\gui\GUI_Buttons.v4p">
+   <PATCH nodename="C:\Users\WiMa\Documents\#Projekte\TEI2014\2013_stimmmaler\Patches\Subpatches\gui\GUI_Buttons.v4p" systemname="GUI_Buttons" filename="C:\Users\julian.hermann\Desktop\Stimmmaler\VVVV Entwicklung\2013_stimmmaler\Patches\Subpatches\gui\GUI_Buttons.v4p">
    <BOUNDS type="Window" left="1845" top="1395" width="23760" height="12900">
    </BOUNDS>
    <NODE systemname="MouseState (System Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Join)" componentmode="Hidden" id="37">
@@ -29,7 +29,7 @@
    <LINK srcnodeid="36" srcpinname="Y" dstnodeid="37" dstpinname="Y">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="35">
-   <BOUNDS type="Node" left="900" top="8436" width="12912" height="276">
+   <BOUNDS type="Node" left="900" top="8436" width="16068" height="276">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
@@ -37,7 +37,7 @@
    </PIN>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
-   <PIN pinname="Layer Template Count" slicecount="1" values="4">
+   <PIN pinname="Layer Template Count" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Layer 3" visible="1">
    </PIN>
@@ -45,7 +45,7 @@
    </PIN>
    <PIN pinname="Layer 4" visible="1">
    </PIN>
-   <PIN pinname="Layer 5" visible="1">
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="34">
@@ -251,9 +251,9 @@
    <LINK srcnodeid="21" srcpinname="Input Value" dstnodeid="20" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1776" top="2844" width="792" height="240">
+   <BOUNDS type="Box" left="2160" top="2592" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1776" top="2844" width="0" height="0">
+   <BOUNDS type="Node" left="2160" top="2592" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.16">
    </PIN>
@@ -633,5 +633,93 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="54" srcpinname="Input Value" dstnodeid="51" dstpinname="String Value">
+   </LINK>
+   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="13704" top="7800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="13836" top="5616" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1" slicecount="1" values="0.03">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Rotate" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14340" top="5196" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14340" top="5196" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="19.81">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="57" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Transform Out" dstnodeid="58" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="14496" top="6324" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Alpha" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="58" dstpinname="Color" linkstyle="Bezier">
+   <LINKPOINT x="14508" y="7200">
+   </LINKPOINT>
+   <LINKPOINT x="14496" y="7200">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Layer" dstnodeid="35" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="57" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14112" top="1344" width="795" height="960">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14112" top="1344" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="4" values="6.23,6.23,-6.24,-6.24">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="57" dstpinname="TranslateY">
    </LINK>
    </PATCH>

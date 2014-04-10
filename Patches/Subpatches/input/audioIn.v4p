@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
    <PATCH nodename="C:\Users\WiMa\Documents\#Projekte\TEI2014\2013_stimmmaler\Patches\Subpatches\input\audioIn.v4p" systemname="audiIn" filename="C:\Users\julian\Dropbox\_FH Mainz\Lehre\SS2013\Wissenschaftsmarkt\Entwicklung\Patches\Subpatches\audiIn.v4p" bgcolor="14737632">
-   <BOUNDS type="Window" left="4635" top="1395" width="19140" height="12720">
+   <BOUNDS type="Window" left="2175" top="570" width="19845" height="14130">
    </BOUNDS>
    <NODE id="21" nodename="FFT (DSHOW9)" systemname="FFT (DShow9)">
    <BOUNDS height="276" left="1002" top="1344" type="Node" width="1476">
@@ -49,7 +49,7 @@
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1.08972258064516">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.16645161290322">
    </PIN>
    <PIN pinname="Show Slider" slicecount="1" values="1">
    </PIN>
@@ -61,11 +61,11 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="3">
+   <PIN pinname="X Input Value" slicecount="1" values="4.88604651162791">
    </PIN>
    <PIN pinname="Minimum" slicecount="1" values="0.1">
    </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="3">
+   <PIN pinname="Maximum" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -311,7 +311,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3552" top="7080" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.08">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -325,7 +325,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1776" top="216" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="|Mikrofon (Realtek High Definiti|">
+   <PIN pinname="Input Enum" slicecount="1" values="|Mikrofon (3- USB PnP Sound Devi|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Driver">
    </PIN>
